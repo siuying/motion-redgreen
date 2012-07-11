@@ -1,1 +1,1 @@
-String.include Term::ANSIColor
+String.send :include, Term::ANSIColor
