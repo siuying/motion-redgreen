@@ -29,12 +29,6 @@ class String
     :on_cyan      ,
     :on_white     
   ].each do |color|
-    class_eval do
-      define_method(color) do
-        Term::ANSIColor.send(color) {
-          self
-        }
-      end
-    end
+    Term::ANSIColor.send(color, self)
   end
 end
