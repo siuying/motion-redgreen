@@ -14,5 +14,4 @@ Gem::Specification.new do |gem|
   gem.name          = "motion-redgreen"
   gem.require_paths = ["lib"]
   gem.version       = Motion::Redgreen::VERSION
-  gem.add_dependency 'motion-define-method', '~> 0.1.2'
 end
