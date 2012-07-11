@@ -29,8 +29,10 @@ class String
     :on_cyan      ,
     :on_white     
   ].each do |color|
-    define_method(color) do |*args, &block|
-      Term::ANSIColor.send(color, *args, &block)
+    define_method(color) do
+      Term::ANSIColor.send(color) {
+        self
+      }
     end
   end
 end
