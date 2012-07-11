@@ -1,1 +1,1 @@
-String.extend Term::ANSIColor
+String.include Term::ANSIColor
